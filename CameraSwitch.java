@@ -35,6 +35,9 @@ public class CameraSwitch implements RelayPortDevice{
     }//Constructor for a CameraSwitch on a single relay port
 
     public void select(String camSelected){
+        /* enter the constant strings for the switch into this method to select cameras
+     constants for cameras are- "kcamera(camera#)" (these can be changed in the switch statment)
+     This switch has four possible ports. */
 
      switch (camSelected) {
         case "kcamera1":   
@@ -71,7 +74,7 @@ public class CameraSwitch implements RelayPortDevice{
     public void setLocalRelay(Relay.Value klocalValue) {
 
         //unused function
-        System.err.println("setLocalRelay(Relay.Value klocalValue);--method not utilized in CameraSwitch.java");
+        System.err.println("setLocalRelay(Relay.Value klocalValue); method not utilized in CameraSwitch.java");
         
     }//DO NOT USE THIS METHOD
 
